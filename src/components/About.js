@@ -1,14 +1,22 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 function About() {
   return (
     <Container className="mt-5">
-      <h1>About Me</h1>
-      <p>
-        I am a passionate IT student who enjoys coding and designing websites.
-        I love learning new technologies and improving my programming skills.
-      </p>
+      <h1 className="mb-4">About Me</h1>
+      <Card>
+        <Card.Body>
+          <Card.Text>
+            I'm a passionate IT student who loves coding, web design, and learning 
+            new technologies. I enjoy building modern websites and exploring UI/UX design.
+            <br /><br />
+            Education: College student, Computer Science  
+            <br />
+            Hobbies: Drawing, Playing guitar, Coding challenges
+          </Card.Text>
+        </Card.Body>
+      </Card>
     </Container>
   );
 }
